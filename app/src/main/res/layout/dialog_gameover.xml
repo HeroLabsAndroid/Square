@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/backgroundFrameLayout"
+    android:background="#80000000">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:background="@drawable/gameover">
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="184dp"
+            android:text="GAME OVER"
+            android:id="@+id/gameoverTextView"
+            android:layout_gravity="center_horizontal|top"
+            android:textColor="#ffffffff"
+            android:textSize="60dp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="182dp"
+            android:text="Score: "
+            android:id="@+id/scoreTextView"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textSize="40dp"
+            android:textColor="#ffffffff" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/replayButton"
+            android:layout_gravity="left|bottom"
+            android:background="#00ffffff"
+            android:src="@drawable/replaybtnstates"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="70dp" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/homeButton"
+            android:layout_gravity="right|bottom"
+            android:background="#00ffffff"
+            android:scaleType="fitXY"
+            android:src="@drawable/homebtnstates"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="70dp" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/playingfield"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context="${relativePackage}.${activityClass}">
+
+    <ImageView
+        android:id="@+id/gridImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/field" />
+
+    <ImageButton
+        android:id="@+id/rightBtn"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@null"
+        android:padding="5dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/leftbtnstates"
+        android:onClick="onClickRightBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp" />
+
+    <ImageButton
+        android:id="@+id/playBtn"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@null"
+        android:padding="5dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/upbtnstates"
+        android:onClick="onClickUpBtn"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/rightBtn"
+        android:layout_alignStart="@+id/rightBtn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/roundTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffffff"
+        android:textSize="50dp" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:id="@+id/timerBar"
+        android:background="@drawable/timerbar_ninepatch"></FrameLayout>
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/jakoblange/AndroidStudioProjects/Square/app/src/main/res/layout/activity_game.xml -->
